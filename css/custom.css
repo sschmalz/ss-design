@@ -1,0 +1,179 @@
+/*
+ * Foundation Customizations
+ * All custom styles and updates to foundation.css added here 
+*/
+
+/* Fonts
+------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+/* Layout Options
+------------------------- */
+/* --- Sections --- */
+.gray-section {
+	width: 100%;
+	background-color: #eee;
+	padding: 4% 0;
+}
+.purple-section {
+	width: 100%;
+	background-color: #702e80;
+	padding: 4% 0;
+}
+.green-section {
+	width: 100%;
+	background-color: #2e7980;
+	padding: 4% 0;
+}
+.green-section p, .purple-section p {
+	color: #fff;
+	font-weight: 300;
+}
+.green-section h1, .green-section h2, .green-section h3, .green-section h4, .purple-section h1, .purple-section h2, .purple-section h3, .purple-section h4 {
+	color: #fff;
+	font-weight: 300;
+}
+/* --- Parallax --- */
+.skrollr-desktop body {
+	height: 100% !important;
+}
+.parallax-image-wrapper {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+}
+.parallax-image-wrapper-25 {
+	height: 25%;
+	top: -25%;
+}
+.parallax-image-wrapper-50 {
+	height: 50%;
+	top: -50%;
+}
+.parallax-image-wrapper-100 {
+	height: 100%;
+	top: -100%;
+}
+.parallax-image {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.parallax-image-25 {
+	height: 200%;
+	top: -25%;
+}
+.parallax-image-50 {
+	height: 200%;
+	top: -50%;
+}
+.parallax-image-100 {
+	height: 100%;
+	top: 0;
+}
+.parallax-image.skrollable-between {
+	display: block;
+}
+.no-skrollr .parallax-image-wrapper {
+	display: none !important;
+}
+#skrollr-body {
+	height: 100%;
+	overflow: visible;
+	position: relative;
+}
+.gap {
+	background: transparent center no-repeat;
+	background-size: cover;
+}
+.skrollr .gap {
+	background: transparent !important;
+}
+.gap-35 {
+	height: 35%;
+}
+.gap-50 {
+	height: 50%;
+}
+.gap-100 {
+	height: 100%;
+}
+#done {
+	height: 100%;
+}
+/* --- Nav --- */
+[data-magellan-expedition], [data-magellan-expedition-clone] {
+  background: -webkit-linear-gradient(left top, #702e80, #2e7980) !important; /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #702e80, #2e7980); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #702e80, #2e7980) !important; /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #702e80, #2e7980) !important; /* Standard syntax */
+	padding: 2% !important;
+}
+.sub-nav dt a, .sub-nav dd a, .sub-nav li a {
+    color: #fff !important;
+}
+/* --- Footer --- */
+footer {
+	width: 100%;
+	background: -webkit-linear-gradient(left top, #2e7980, #702e80); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #2e7980, #702e80); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #2e7980, #702e80); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #2e7980, #702e80); /* Standard syntax */
+	padding: 20px;
+}
+footer p {
+	font-size: 12px;
+	font-weight: 300;
+	color: #fff;
+	padding-top: 2%;
+	margin-bottom: 0px;
+}
+
+/* Typography
+------------------------- */
+.heading-text {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+.caption {
+	font-size: 0.9em;
+	line-height: 1.3;
+	padding-top: 4px;
+}
+.branding {
+	font-size: 1.2em !important;
+}
+.green-section a, .purple-section a {
+  color: #c4eef2 !important;
+  text-decoration: none;
+  line-height: inherit; }
+  .green-section a:hover, .purple-section a:hover, .green-section a:focus, .purple-section a:focus {
+    color: #c4eef2 !im; }
+	
+/* Image Styles
+------------------------- */
+img.circle {
+	border-radius: 50% !important;
+}
+img.bordered {
+	padding: 4px;
+	border: solid 1 px #eee; 
+}
+img.frame {
+	padding: 10px;
+}
+img.horzcentered {
+	display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+img.vertcentered {
+
+}

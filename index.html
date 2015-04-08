@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="no-skrollr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Sarah Schmalzer Design</title>
+
+<link rel="stylesheet" href="css/custom.css" />
+<link rel="stylesheet" href="css/foundation.css" />
+
+<script src="js/vendor/modernizr.js"></script>
+</head>
+
+<body>
+<!--
+		We position the images fixed and therefore need to place them outside of #skrollr-body.
+		We will then use data-anchor-target to display the correct image matching the current section (.gap element).
+	-->
+
+<div
+		class="parallax-image-wrapper parallax-image-wrapper-50"
+		data-anchor-target="#nav-sec + .gap"
+		data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+  <div
+			class="parallax-image parallax-image-50"
+			style="background-image:url(img/bkgd-2.jpg)"
+			data-anchor-target="#nav-sec + .gap"
+			data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 80%, 0px);"
+		></div>
+  <!--the +/-80% translation can be adjusted to control the speed difference of the image--> 
+</div>
+<div
+		class="parallax-image-wrapper parallax-image-wrapper-50"
+		data-anchor-target="#about-sec + .gap"
+		data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+  <div
+			class="parallax-image parallax-image-50"
+			style="background-image:url(img/bkgd-1.jpg)"
+			data-anchor-target="#about-sec + .gap"
+			data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 80%, 0px);"
+		></div>
+</div>
+<div
+		class="parallax-image-wrapper parallax-image-wrapper-50"
+		data-anchor-target="#skills-sec + .gap"
+		data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+  <div
+			class="parallax-image parallax-image-50"
+			style="background-image:url(img/bkgd-4.jpg)"
+			data-anchor-target="#skills-sec + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+</div>
+<div
+		class="parallax-image-wrapper parallax-image-wrapper-50"
+		data-anchor-target="#work-sec + .gap"
+		data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+  <div
+			class="parallax-image parallax-image-50"
+			style="background-image:url(img/bkgd-3.jpg)"
+			data-anchor-target="#work-sec + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+</div>
+<div id="skrollr-body">
+<a name="page-top"></a>
+	<div data-magellan-expedition="fixed" id="nav-sec">
+          	<dl class="sub-nav">
+            	<dd data-magellan-arrival="about"><a href="#about">ABOUT</a></dd>
+                <dd data-magellan-arrival="skills"><a href="#skills">SKILLS</a></dd>
+                <dd data-magellan-arrival="contact"><a href="#work">WORK</a></dd>
+            	<dd data-magellan-arrival="contact"><a href="#contact">CONTACT</a></dd>
+                <dd data-magellan-arrival="contact" class="right branding"><a href="#page-top">Sarah Schmalzer</a></dd>
+          	</dl>
+		</div>
+
+  <div class="gap gap-35" style="background-image:url(img/bkgd-2.jpg);"></div>
+  <div class="purple-section" id="about-sec">
+  <div class="row">
+    <div class="large-12 small-centered columns"> <a name="about"></a>
+      <h2 class="text-center heading-text" data-magellan-destination="about">ABOUT ME</h2>
+      <div class="row">
+        <div class="medium-4 columns medium-text-right">
+          <img src="img/about.jpg" title="Sarah Schmalzer" alt="Sarah Schmalzer" />
+        </div>
+        <!-- /medium-4 columns -->
+        <div class="medium-8 columns">
+          <p><br />Hello, I'm web designer and front-end developer in Portland, Oregon, focused on creating beautiful responsive sites. My background spans from painting and illustration to logo design to ebook development to web design. I studied art and writing in college, and have worked in web design and marketing since graduating.</p>
+          <p>When I'm not working on websites, you can find me knitting, reading young adult novels, working in my veggie garden, or going on adventures with my dog. </p>
+        </div>
+        <!-- /medium-8 columns --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /large-12 small-centered columns --> 
+  </div>
+  </div>
+  <!-- /row -->
+  
+  <div class="gap gap-50" style="background-image:url(img/bkgd-1.jpg);"></div>
+  
+  <div class="green-section" id="skills-sec">
+  <div class="row">
+    <div class="large-12 small-centered columns"> <a name="skills"></a>
+      <h2 class="text-center heading-text" data-magellan-destination="skills">SKILLS</h2>
+      <div class="row">
+        <div class="medium-6 columns medium-text-right">
+        
+        <h3>HTML5 / CSS3</h3>
+          <p>I spend my days writing HTML &amp; CSS, playing with divs and styles. I'm completely comfortable laying out sites in divs within divs, with some more divs; but please don't make me develop a table-based site.</p>
+          <h3>Responsive</h3>
+          <p>I won't pretend to be an expert in responsive design; everything's constantly changing, but I try to keep up and create sites that will not completely explode when the next iPhone with crazy new dimensions comes out.</p>
+          <h3>Design &amp; Development</h3>
+          <p>I started out as a web designer with just enough coding knowledge to do damage; but now I've moved more into the development side, and am just as comfortable creating Photoshop mockups as I am coding out those mockups. </p>
+          </div><!-- /medium-6 columns -->
+        <div class="medium-6 columns medium-text-left">
+        
+          <h3>Bootstrap</h3>
+        
+          <p><a href="http://getbootstrap.com/">Bootstrap</a> is my go-to framework. I'm extremely comfortable designing and developing responsive sites with it. Even my custom Wordpress themes are built on Bootstrap.</p>
+
+          <h3>Foundation</h3>
+          <p><a href="http://foundation.zurb.com/index.html">Foundation</a> is growing on me (I've even designed this very site with it), but I'm not quite as comfortable with it, as Bootstrap, but we're getting there. The wealth of plug-ins, add-ons, and templates makes it a pretty awsome framework to start a site with.</p>
+          <h3>Wordpress</h3>
+          
+          <p>I've set up Wordpress sites for clients using themes developed by others, as well as developed custom themes for clients based on <a href="http://roots.io/">Roots</a> Bootstrap framework.</p>
+
+        </div>
+        <!-- /medium-6 columns --> 
+      </div>
+      <!-- /row -->
+      </div>
+      <p class="text-center">I also have basic PHP knowledge (enough to create custom Wordpress themes), fairly extensive Adobe ColdFusion development experience, ebook creation and coding knowledge, and a pretty strong writing background. </p>
+    </div>
+    <!-- /large-12 small-centered columns --> 
+  </div>
+  <!-- /row -->
+  
+  <div class="gap gap-50" style="background-image:url(img/bkgd-4.jpg);"></div>
+  <div class="gray-section" id="work-sec">
+      	<div class="row">
+      		<div class="large-12 small-centered columns">
+	        	<a name="work"></a>
+				<h2 class="text-center heading-text" data-magellan-destination="work">WORK</h2>
+                <div class="row">
+                	<div class="medium-4 columns text-center">
+                    	<h4>Mechanical Theatres</h4>
+                        <a href="http://www.thomashughesmechanicaltheatres.com/"><img src="img/work-thomashuges.jpg" alt="Thomas Hughes: Mechanical Theatres" title="Thomas Hughes: Mechanical Theatres"></a>
+                        <p class="caption">Full Wordpress site redesign, including custom bootstrap-based theme.</p>
+                    </div><!-- /medium-3 columns -->
+                    <div class="medium-4 columns text-center">
+                    	<h4>FLIR</h4>
+                        <a href="http://www.flir.com"><img src="img/work-flir.jpg" alt="FLIR" title="FLIR"></a>
+                        <p class="caption">Responsive Bootstrap-based site redesign (part of a design/development team).</p>
+                    </div><!-- /medium-3 columns -->
+                    <div class="medium-4 columns text-center">
+                    	<h4>InfraMation</h4>
+                        <a href="http://www.inframation.org"><img src="img/work-inframation.jpg" alt="InfraMation" title="InfraMation"></a>
+                        <p class="caption">Responsive Bootstrap-based site redesign (part of a design/development team).</p>
+                    </div><!-- /medium-3 columns -->
+                    
+                </div><!-- /row -->
+      		</div><!-- /large-12 small-centered columns -->
+    	</div><!-- /row -->
+  </div>
+   <div class="gap gap-50" style="background-image:url(img/bkgd-3.jpg);"></div>
+  <div class="gray-section">
+  <div class="row">
+    <div class="large-12 small-centered columns"> <a name="contact"></a>
+      <h2 class="text-center heading-text" data-magellan-destination="contact">CONTACT</h2>
+      <div class="row">
+        <div class="medium-6 columns">
+          <h3>Let's Chat</h3>
+          <p>Interested in working together on a project, want to talk about a site redesign, or discuss responsive design? Fill out my contact form or send me an email at <a href="mailto:hello@sarahschmalzer.com">hello@sarahschmalzer.com</a>.</p>
+        </div>
+        <!-- /medium-6 columns --> 
+        <!-- Contact form -->
+        <div class="medium-6 columns">
+<script type="text/javascript" src="http://form.jotform.us/jsform/50377999968180"></script>     </div>
+        <!-- /medium-6 columns --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /large-12 small-centered columns --> 
+  </div>
+  <!-- /row -->
+  </div>
+  <footer>
+    <div class="row" id="done">
+      <div class="small-12">
+        <div class="medium-7 columns small-only-text-center"> 
+        	<a href="http://www.linkedin.com/in/sarahschmalzer" target="_blank"><img src="img/icon-linkedin.svg" alt="LinkedIn" title="LinkedIn" class="small-1"></a>
+            <a href="https://github.com/sschmalz" target="_blank"><img src="img/icon-github.svg" alt="GitHub" title="GitHub" class="small-1">	</a>
+            <a href="http://instagram.com/s_schmalzer" target="_blank"><img src="img/icon-instagram.svg" alt="instagram" title="intagram" class="small-1"></a>	
+        </div>
+        <!-- /medium-7 -->
+        <div class="medium-5 columns medium-text-right">
+          <p class="small-only-text-center">&copy; 2015 Sarah Schmalzer</p>
+        </div>
+        <!-- /medium-5 --> 
+      </div>
+      <!-- /small-12 --> 
+    </div>
+    <!-- /row --> 
+  </footer>
+</div>
+<!-- Javascript Calls --> 
+<script src="js/vendor/jquery.js"></script> 
+<script src="js/foundation.min.js"></script> 
+<script src="js/foundation/foundation.magellan.js"></script> 
+<script type="text/javascript" src="js/skrollr.min.js"></script> 
+<script>
+          $(document).foundation();
+        </script> 
+<script type="text/javascript">
+			skrollr.init({
+				smoothScrolling: false,
+				mobileDeceleration: 0.004
+			});
+		</script>
+</body>
+</html>
